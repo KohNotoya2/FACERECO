@@ -1,0 +1,57 @@
+body {
+    background-size: cover;
+    background-image:linear-gradient(to top ,green,blue,yellow,red);
+}
+
+.heading {
+    font-size: 23px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#start {
+    font-size: 18px;
+}
+
+canvas {
+    border: 5px solid white;
+    border-radius: 25px;
+    margin-top: 130px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.copy_right_footer {
+    bottom: 0;
+    position: fixed;
+    color: grey;
+    width: 100%;
+    background-color: white;
+    line-height:4;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    padding: 10px;
+    width: 50%;
+    background-color: purple;
+    color: white;
+}
+
+#camera {
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+.buttons {
+    color: purple;
+    background-color: yellowgreen;
+    font-size: 15px;
+    border-radius: 25px;
+}

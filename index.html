@@ -1,0 +1,46 @@
+<html>
+<head>
+
+	<title>Object Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+
+<body>
+    <center>
+        <div class="heading btn btn-success" id="heading">Face Recognition</div>
+        <br><br>
+        <p>This model is trained to identify:</p>
+            <h4>Myself</h4>
+            <h4>My sister</h4>
+            <h4>My Father</h4>
+<p style="color:black; letter-spacing:0;">~~~~~~~ WEBCAM VIEW ~~~~~~~</p>
+        <div id="camera"></div>
+        <br>
+        <div id="result"></div>
+        <br>
+        <button class="takePic buttons" id="take_picture" onclick="takeSnapshot()">TAKE SNAPSHOT</button>
+        <br><br><br>
+        <button onclick="check()" class="button_identify buttons" id="button_identify">Identify Person</button>
+        <br>
+        <br>
+        <span>
+            <label class="accuracy btn btn-danger">Person: <span id="identified"></span></label>
+            <label class="accuracy btn btn-success">Accuracy: <span id="accuracy"></span></label>
+        </span>
+        <br><br><br><br><br><br><br><br><br>
+    </center>
+
+    <div class="copy_right_footer">Developed by - Koh Notoya</div>
+    <script src="main.js"></script>
+</body>
+</html>
